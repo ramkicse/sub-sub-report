@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="record" pageWidth="572" pageHeight="752" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="8edd467b-6583-4a78-9e9a-99b56a7d976f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="listOfMark" class="java.util.List"/>
+	<field name="name" class="java.lang.String"/>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="50"/>
+	</columnHeader>
+	<detail>
+		<band height="182" splitType="Stretch">
+			<subreport>
+				<reportElement uuid="5089fe21-a733-43b3-91be-39b3d36ee24d" x="22" y="67" width="523" height="100"/>
+				<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($F{listOfMark})]]></dataSourceExpression>
+				<subreportExpression><![CDATA["mark.jasper"]]></subreportExpression>
+			</subreport>
+			<staticText>
+				<reportElement uuid="ebbad345-6f52-4518-b723-307a8517e2c3" x="54" y="11" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Record Name]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="a6bcaa23-606b-496c-9ea1-73ada5d7fbab" x="190" y="11" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

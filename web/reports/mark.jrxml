@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="mark" pageWidth="572" pageHeight="752" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="7120956e-e19d-4990-9ce8-26839125b382">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="sub1" class="java.lang.Integer"/>
+	<field name="sub2" class="java.lang.Integer"/>
+	<field name="sub3" class="java.lang.Integer"/>
+	<columnHeader>
+		<band height="64">
+			<staticText>
+				<reportElement uuid="89e04144-db7d-4067-8cc4-2a16d988ffdb" x="200" y="12" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[Marks]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="89e04144-db7d-4067-8cc4-2a16d988ffdb" x="92" y="44" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[sub1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="89e04144-db7d-4067-8cc4-2a16d988ffdb" x="318" y="44" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[sub3]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="89e04144-db7d-4067-8cc4-2a16d988ffdb" x="200" y="44" width="100" height="20"/>
+				<textElement/>
+				<text><![CDATA[sub2]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="41" splitType="Stretch">
+			<textField>
+				<reportElement uuid="1b24ea75-329a-43ae-a599-810e57d5ff0a" x="92" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{sub1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="76fbbba0-e7e0-450e-8272-a0468cef07e2" x="200" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{sub2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="73bf30c4-b927-4785-af21-6ecef000295b" x="318" y="0" width="100" height="20"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{sub3}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
